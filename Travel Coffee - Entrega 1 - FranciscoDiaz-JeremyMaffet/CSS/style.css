@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+* {
+    margin: auto;
+    padding: 0;
+}
+
+body {
+    color: #fff;
+    background: linear-gradient(45deg, rgb(45, 11, 30) 0%, rgb(45, 11, 30) 49%,rgb(78, 19, 25) 49%, rgb(78, 19, 25) 67%,rgb(111, 27, 19) 67%, rgb(111, 27, 19) 76%,rgb(143, 36, 14) 76%, rgb(143, 36, 14) 81%,rgb(176, 44, 8) 81%, rgb(176, 44, 8) 82%,rgb(209, 52, 3) 82%, rgb(209, 52, 3) 100%);
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: auto;
+    padding: 20px;
+}
+
+div{
+	margin: 0;
+	padding: 0;
+}
+
+header {
+    padding: 0;
+}
+
+.row{
+    padding: 0;
+    margin: auto;
+}
+
+.top {
+    text-align: center;
+    background: rgba(27, 26, 26, 0.904);
+}
+
+.atras {
+    text-align: center;
+    background: #388E3C;
+}
+
+.menu {
+    text-align: center;
+	background: rgba(183, 186, 0, 0.699);
+	float: initial;
+}
+
+.derechos {
+    text-align: center;
+	background: rgba(52, 152, 219, 0.692);
+	margin: 0;
+	padding: 0;
+}
+
+.quienes-somos{
+	color: blue;
+}
+
+.up {
+    text-align: center;
+	background: rgba(56, 142, 60, 0.699);
+	text-size-adjust: 12px;
+	text-decoration: none;
+}
+
+#slider {
+    overflow: hidden;
+    max-width: 1000px;
+    position:relative;
+    margin:auto;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+    margin: 10;
+	left: 0;
+    animation: 20s slider infinite;
+}
+#slider figure img {
+	width: 20%;
+    float: left;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
