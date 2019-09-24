@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Contacto</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/flexboxgrid.min.css">
+    <link rel="stylesheet" href="CSS/style-contacto.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Icono/Logo en la barra -->
+    <link rel="shortcut icon" type="image/x-icon" width=30 href="img-index/favicon.png">
+</head>
+
+<body>
+
+    <!-- Contenedor principal Formulario Registro -->
+    <!-- Cabecera -->
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-xs-12">
+                <div class="top">
+                    <h1>Contacto Travel Coffee</h1>
+                </div>
+            </div>
+        </header>
+
+        <!-- Volver -->
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="atras">
+                    <h3>
+                        <a href="index.html"> Volver</a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="row center-xs">
+            <div class="col-xs-12">
+                <div class="logo-contacto">
+                    <h3>Formulario de Contacto</h3>
+                    <img src="img-index/logo-formulario.jpg" height="200" width="200" alt="Logo Registro">
+                    <p>¿Deseas saber mas sobre el catalogo de nuestros cafés?</p>
+                    <p>Rellena el siguiente formulario con tus datos personales, seleccionando el café de tu gusto y
+                        envianos tus comentarios.</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="row col-xs-12 col-sm-6 center-md-4">
+            <section class="col-xs-12 col-sm-6">
+                <form id="contacto" name="contacto" class="formulario" action="" method="POST">
+                    <h3>Ingreso de Datos:</h3><br>
+                    <input type="text" id="nombre" name="nombre" minlength="3" maxlength="10"
+                        placeholder="Ingrese Nombre" size="40" onblur="validarNombre()"><br><br>
+                    <input type="text" id="apellido" name="apellido" maxlenght="10" placeholder="Ingrese Apellido"
+                        onblur="validarApellido()"><br><br>
+                    <label for="telefono">+56 9</label> <input type="number" id="telefono" name="telefono"
+                        placeholder="Teléfono" size="35" step="1"><br><br>
+
+                    <label for="cafe">Variedad Cafe </label>
+
+                    <select name="cafe" id="variedad-cafe" onblur="validarSeleccion()">
+                        <option value="" selected="selected">Seleccione</option>
+                        <option value="mocha">Mocha</option>
+                        <option value="mocha-blanco">Mocha Blanco</option>
+                        <option value="capucchino">Capucchino</option>
+                        <option value="cinnamon-dolce-latte">Cinnamon Dolce Latte</option>
+                        <option value="cocoa-cappuccino">Cocoa Cappuccino</option>
+                        <option value="dulce-de-leche-latte">Dulce de Leche Latte</option>
+                        <option value="flat-white">Flat White</option>
+                        <option value="latte">Latte</option>
+                        <option value="latte-macchiato">Latte Macchiato</option>
+                        <option value="vainilla-latte">Vainilla Latte</option>
+                        <option value="skinny-vainilla-latte">Skinny Vainilla Latte</option>
+                        <option value="caramel-macchiato">Caramel Macchiato</option>
+                        <option value="skinny-caramel-macchiato">Skinny Caramel Macchiato</option>
+                        <option value="cortado">Cortado</option>
+                        <option value="espresso">Espresso</option>
+                        <option value="espresso-dopio">Espresso Dopio</option>
+                        <option value="espresso-lungo">Espresso Lungo</option>
+                        <option value="espresso-panna">Espresso Panna</option>
+                        <option value="espresso-macchiato">Espresso Macchiato</option>
+                    </select><br><br>
+
+                    <input type="email" id="mail" name="mail" placeholder="Ingrese Correo" size="40"
+                        onblur="validarCorreo()"><br><br>
+                    <input id="fecha" name="fecha" type="date" min="2000-01-01"><br><br>
+                    <textarea rows="3" cols="38" placeholder="Mensaje"></textarea><br><br>
+                    <input class="boton" type="submit" id="Enviar" value="Enviar" onclick="validarFormulario()"><br><br>
+                </form>
+            </section>
+        </section>
+
+
+        <!-- Subir -->
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="up">
+                    <h3><a href="#top">Subir</a></h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Pie de Página -->
+
+        <footer>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="derechos">
+                        <h2>Copyrights 2019</h2>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="JS/validacion.js">
+    </script>
+
+
+
+</body>
+
+</html>
